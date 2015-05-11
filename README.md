@@ -28,7 +28,7 @@ will return 404 and empty object.
 
 ## Create a new model
 models/todo.js
-```
+```javascript
 import { type, required, Timestamps } from 'rune/orm';
 
 @Timestamps
@@ -41,7 +41,7 @@ export class Todo extends BaseModel {
 
 ## Create a new controller
 controllers/todos.js
-```
+```javascript
 export class TodosController extends BaseController {
   async index() {
     let todos = await Todo.fetch();
@@ -63,7 +63,7 @@ export class TodosController extends BaseController {
 
 ## Configure routes
 config/routes.js
-```
+```javascript
 export default (root) => {
   root.resources('todos');
 };
