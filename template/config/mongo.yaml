@@ -1,5 +1,5 @@
 development:
-  URL: 'mongodb://localhost/project'
+  uri: 'mongodb://localhost/rune_project'
 
 test:
-  URL: 'mongodb://localhost/project_test'
+  uri: 'mongodb://localhost/rune_project'

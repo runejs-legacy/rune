@@ -43,6 +43,7 @@ export class Controller {
 
   get $hooks() {
     let result = _.cloneDeep(this.constructor.hooks);
+    if (!result) return;
 
     ['before', 'after'].forEach(hook => {
       ['action'].forEach(type => {
@@ -60,6 +61,7 @@ export class Controller {
   }
 
   async $beforeAction(action) {
+    if (!this.$hooks) return;
     for (let hook of this.$hooks.before.action)
       if(!this.$replied) await this[hook.method]();
   }
@@ -67,6 +69,7 @@ export class Controller {
   async $afterAction(action) {
     if (!this.$replied) this.$reply({});
 
+    if (!this.$hooks) return;
     for (let hook of this.$hooks.after.action)
       if(!this.$broken) await this[hook.method]();
   }

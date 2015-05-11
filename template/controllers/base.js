@@ -1,3 +1,5 @@
-export class BaseController extends Rune.Controller {
+import { Controller } from 'rune/http';
+
+export class BaseController extends Controller {
 
 }
