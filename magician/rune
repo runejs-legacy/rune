@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+
+require('babel/register')({ stage: 0, ignore: /\/node_modules\/(?!rune)/ });
+require('./cli.js');

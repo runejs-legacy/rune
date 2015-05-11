@@ -1,0 +1,5 @@
+development:
+  URL: 'mongodb://localhost/project'
+
+test:
+  URL: 'mongodb://localhost/project_test'
