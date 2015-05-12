@@ -80,3 +80,15 @@ GET http://localhost:3000/todos
 POST http://localhost:3000/todos
 DELETE http://localhost:3000/todos/THE_POST_ID
 ```
+
+## TODOs for First Beta Version (0.1.0)
+- [ ] Seperate modules into different repos (http, orm, exec)
+- [ ] Embedded Documents and relationships for ORM
+- [ ] Documentation
+- [ ] Lots of unit tests
+- [ ] Lots of discussions
+- [ ] Lots of help
+- [ ] Better CLI
+- [ ] Create core team
+- [ ] Build a website for runejs.io
+- [ ] REPL Module (Maybe, rune console command)
